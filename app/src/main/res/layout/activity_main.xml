@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="@color/dark_cyan"
+    tools:context="com.example.rajee.implicitintents.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_margin="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/implicit_intents"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/url"
+            android:textSize="@dimen/font_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/url_text"/>
+        <EditText
+            android:id="@+id/url_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_hint"
+            android:inputType="textUri"
+            android:ems="10"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/url_text"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/launch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/launch"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_medium"
+        android:padding="7dp"
+        android:background="@color/bright_yellow"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        style="@style/Divider"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textSize="@dimen/font_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/phone"/>
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_hint"
+            android:inputType="phone"
+            android:ems="10"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/phone"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ring"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium"
+        android:padding="7dp"
+        android:background="@color/dark_red"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        style="@style/Divider"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/close_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close_app"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium"
+        android:padding="10dp"
+        android:background="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Implicit Intents</string>
+    <string name="implicit_intents">Implicit Intents</string>
+    <string name="url">URL:</string>
+    <string name="launch">Launch</string>
+    <string name="phone">Phone:</string>
+    <string name="ring">Ring</string>
+    <string name="close_app">Close App</string>
+    <string name="email_hint">http://www.sjsu.edu</string>
+    <string name="phone_hint">(408) 858 6448</string>
+</resources>
